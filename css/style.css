@@ -885,5 +885,10 @@
     border-top: 1px solid rgba(255, 255, 255, .08);
 }
 /*** copyright end ***/
+:root {
+    --bs-primary: #EEA325; /* vàng */
+    --bs-secondary: #0BE1FF; /* nếu muốn, bạn có thể chỉnh thêm màu phụ */
+}
+
 
 
