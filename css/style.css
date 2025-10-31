@@ -889,6 +889,9 @@
     --bs-primary: #EEA325; /* vàng */
     --bs-secondary: #FFDE17; /* nếu muốn, bạn có thể chỉnh thêm màu phụ */
 }
+.btn-primary:hover {
+    background-color: #c78e1b; /* vàng đậm hơn khi hover */
+}
 
 
 
