@@ -887,8 +887,9 @@
 /*** copyright end ***/
 :root {
     --bs-primary: #EEA325; /* vàng */
-    --bs-secondary: #0BE1FF; /* nếu muốn, bạn có thể chỉnh thêm màu phụ */
+    --bs-secondary: #FFDE17; /* nếu muốn, bạn có thể chỉnh thêm màu phụ */
 }
+
 
 
 
