@@ -1094,5 +1094,174 @@
 .copyright a:hover {
   color: var(--brand-hover) !important;
 }
+/* ===== THEME OVERRIDES: Primary = #ff9933, Hover = #962c2d ===== */
+:root {
+  --bs-primary: #ff9933;      /* vàng chủ đạo */
+  --brand-hover: #962c2d;     /* màu hover */
+}
+
+/* Buttons */
+.btn.btn-primary {
+  background: var(--bs-primary) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+.btn.btn-primary:hover {
+  background: var(--brand-hover) !important;
+  color: #ffffff !important;
+}
+
+.btn.btn-light {
+  background: #ffffff !important;
+  color: var(--bs-primary) !important;
+  border: none !important;
+}
+.btn.btn-light:hover {
+  background: var(--brand-hover) !important;
+  color: #ffffff !important;
+}
+
+.btn.btn-dark {
+  background: var(--bs-primary) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+.btn.btn-dark:hover {
+  background: var(--brand-hover) !important;
+  color: #ffffff !important;
+}
+
+/* Navbar hover links */
+.navbar-light .navbar-nav .nav-item:hover .nav-link,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: var(--bs-primary) !important;
+}
+
+/* Dropdown hover */
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background: var(--bs-primary) !important;
+  color: #ffffff !important;
+}
+
+/* Topbar icon */
+.topbar .dropdown-toggle::after {
+  color: var(--bs-primary) !important;
+}
+
+/* Header carousel arrow buttons */
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+  background: #ffffff !important;
+  color: var(--bs-primary) !important;
+}
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+  background: var(--brand-hover) !important;
+  color: #ffffff !important;
+}
+
+/* Breadcrumb background overlay */
+.bg-breadcrumb {
+  background: linear-gradient(rgba(255, 153, 51, 0.9), rgba(0, 0, 0, 0.2)), 
+  url(../img/bg-breadcrumb.jpg) center/cover no-repeat !important;
+}
+
+/* Feature */
+.feature .feature-item:hover {
+  background: var(--bs-primary) !important;
+}
+.feature .feature-item:hover .feature-icon,
+.feature .feature-item:hover h4,
+.feature .feature-item:hover p {
+  color: #ffffff !important;
+}
+.feature .feature-item:hover a.btn {
+  background: #ffffff !important;
+  color: var(--bs-primary) !important;
+}
+.feature .feature-item:hover a.btn:hover {
+  background: var(--brand-hover) !important;
+  color: #ffffff !important;
+}
+
+/* Service overlay change from blue → yellow */
+.service .service-item .service-img::after {
+  background: rgba(255, 153, 51, 0.2) !important;
+}
+.service .service-item:hover .service-img .service-icon {
+  background: var(--bs-primary) !important;
+  color: #ffffff !important;
+}
+
+/* Blog category tag */
+.blog .blog-item .blog-img .blog-categiry {
+  background: var(--bs-primary) !important;
+  color: #ffffff !important;
+}
+
+/* FAQ header */
+.faq-section .accordion .accordion-item .accordion-header .accordion-button {
+  background: rgba(255, 153, 51, 0.8) !important;
+  color: #ffffff !important;
+}
+.faq-section .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  background: var(--bs-light) !important;
+  color: var(--bs-primary) !important;
+}
+
+/* Team title */
+.team .team-item .team-title {
+  background: var(--bs-primary) !important;
+  color: #ffffff !important;
+}
+.team .team-item:hover .team-title {
+  background: var(--brand-hover) !important;
+}
+
+/* Testimonial nav */
+.testimonial .owl-nav .owl-prev,
+.testimonial .owl-nav .owl-next {
+  background: var(--bs-primary) !important;
+  color: #ffffff !important;
+}
+.testimonial .owl-nav .owl-prev:hover,
+.testimonial .owl-nav .owl-next:hover {
+  background: var(--brand-hover) !important;
+  color: #ffffff !important;
+}
+
+/* ===== Footer & Copyright ===== */
+.footer {
+  background: var(--bs-primary) !important;
+  color: #ffffff !important;
+}
+.footer .footer-item a {
+  color: #ffffff !important;
+}
+.footer .footer-item a:hover {
+  color: var(--brand-hover) !important;
+}
+
+.footer .footer-item .footer-btn a {
+  background: #ffffff !important;
+  color: var(--bs-primary) !important;
+}
+.footer .footer-item .footer-btn a:hover {
+  background: var(--brand-hover) !important;
+  color: #ffffff !important;
+}
+
+.copyright {
+  background: var(--bs-primary) !important;
+  color: #ffffff !important;
+  border-top: 1px solid rgba(255, 255, 255, .15) !important;
+}
+.copyright a {
+  color: #ffffff !important;
+}
+.copyright a:hover {
+  color: var(--brand-hover) !important;
+}
+
 
 
