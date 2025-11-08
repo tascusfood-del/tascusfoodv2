@@ -885,4 +885,214 @@
     border-top: 1px solid rgba(255, 255, 255, .08);
 }
 
+/* ===== THEME OVERRIDES: Primary = #ff9933, Hover = #962c2d ===== */
+:root {
+  --bs-primary: #ff9933;           /* vàng chủ đạo */
+  --brand-hover: #962c2d;          /* màu hover riêng để dùng thay var(--bs-dark) trong hover */
+}
+
+/* Buttons */
+.btn.btn-primary {
+  background: var(--bs-primary) !important;
+  color: #111 !important;          /* chữ đen cho dễ đọc trên nền vàng */
+  border: none !important;
+}
+.btn.btn-primary:hover {
+  background: var(--brand-hover) !important;
+  color: #fff !important;
+}
+
+.btn.btn-light {
+  color: var(--bs-primary) !important;
+  border: none !important;
+}
+.btn.btn-light:hover {
+  background: var(--brand-hover) !important;
+  color: #fff !important;
+}
+
+.btn.btn-dark {
+  background: var(--bs-primary) !important;
+  color: #111 !important;
+  border: none !important;
+}
+.btn.btn-dark:hover {
+  background: var(--brand-hover) !important;
+  color: #fff !important;
+}
+
+/* Topbar dropdown */
+.topbar .dropdown .dropdown-menu a:hover {
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+}
+.topbar .dropdown-toggle::after {
+  color: var(--bs-primary) !important;
+}
+
+/* Navbar toggler (mobile) */
+@media (max-width: 991px) {
+  .navbar.navbar-expand-lg .navbar-toggler {
+    border-color: var(--bs-primary) !important;
+    color: var(--bs-primary) !important;
+  }
+}
+
+/* Dropdown hover */
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+}
+
+/* Header carousel controls */
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+  background: var(--bs-light) !important;
+  color: var(--bs-primary) !important;
+}
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+  /* giữ hiệu ứng, đổi màu chữ khi hover */
+  color: var(--bs-white) !important;
+}
+
+/* Breadcrumb hero: chuyển overlay xanh sang vàng */
+.bg-breadcrumb {
+  background: linear-gradient(rgba(255, 153, 51, 0.9), rgba(0, 0, 0, 0.2)), url(../img/bg-breadcrumb.jpg) center/cover no-repeat !important;
+}
+
+/* Feature card */
+.feature .feature-item:hover {
+  background: var(--bs-primary) !important;
+}
+.feature .feature-item .feature-icon {
+  background: var(--bs-light) !important;
+  color: var(--bs-primary) !important;
+}
+.feature .feature-item .feature-icon::after {
+  background: var(--brand-hover) !important; /* hiệu ứng phủ dưới icon khi hover */
+}
+.feature .feature-item:hover a.btn {
+  background: var(--bs-white) !important;
+  color: var(--bs-primary) !important;
+}
+.feature .feature-item:hover a.btn:hover {
+  background: var(--brand-hover) !important;
+  color: var(--bs-white) !important;
+}
+
+/* Service: đổi overlay ảnh từ xanh sang vàng */
+.service .service-item .service-img::after {
+  background: rgba(255, 153, 51, 0.2) !important;
+}
+.service .service-item .service-img .service-icon {
+  background: var(--bs-light) !important;
+}
+.service .service-item .service-img .service-icon i {
+  color: var(--bs-primary) !important;
+}
+.service .service-item:hover .service-img .service-icon {
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+}
+.service .service-item:hover .service-img .service-icon i {
+  color: var(--bs-white) !important;
+}
+.service .service-item .service-content {
+  background: var(--bs-light) !important;
+}
+.service .service-item .service-content::after {
+  background: var(--bs-primary) !important;
+}
+.service .service-item:hover .service-content .service-content-inner .btn.btn-primary {
+  background: var(--bs-white) !important;
+  color: var(--bs-primary) !important;
+}
+.service .service-item:hover .service-content .service-content-inner .btn.btn-primary:hover {
+  background: var(--brand-hover) !important;
+  color: #fff !important;
+}
+
+/* Blog: overlay & category tag */
+.blog .blog-item .blog-img::after {
+  background: rgba(255, 153, 51, 0.2) !important;
+}
+.blog .blog-item .blog-img .blog-categiry {
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+}
+.blog .blog-item .blog-content a.btn:hover {
+  color: var(--bs-primary) !important;
+}
+
+/* FAQs: chuyển nền xanh sang vàng */
+.faq-section .accordion .accordion-item .accordion-header .accordion-button {
+  background: rgba(255, 153, 51, 0.8) !important;
+  color: #fff !important;
+}
+.faq-section .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  color: var(--bs-primary) !important;
+  background: var(--bs-light) !important;
+}
+
+/* Team */
+.team .team-item .team-title {
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+}
+.team .team-item:hover .team-title {
+  background: var(--brand-hover) !important;
+}
+
+/* Testimonial nav buttons */
+.testimonial .owl-nav .owl-prev,
+.testimonial .owl-nav .owl-next {
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+}
+.testimonial .owl-nav .owl-prev:hover,
+.testimonial .owl-nav .owl-next:hover {
+  background: var(--brand-hover) !important;
+  color: var(--bs-white) !important;
+}
+
+/* Footer & copyright: đổi nền “dark” sang vàng, đảm bảo độ tương phản chữ */
+.footer {
+  background: var(--bs-primary) !important;
+}
+.footer,
+.footer .footer-item p {
+  color: #111 !important; /* chữ đen trên nền vàng */
+}
+.footer .footer-item a {
+  color: #111 !important;
+}
+.footer .footer-item a:hover {
+  color: var(--brand-hover) !important;
+}
+.footer .footer-item .footer-btn a {
+  background: var(--bs-light) !important;
+  color: var(--bs-primary) !important;
+}
+.footer .footer-item .footer-btn a:hover {
+  background: var(--bs-primary) !important;
+  color: #111 !important;
+}
+.footer .footer-item .footer-btn a:hover i {
+  color: #111 !important;
+}
+
+/* Copyright bar */
+.copyright {
+  background: var(--bs-primary) !important;
+  border-top: 1px solid rgba(0, 0, 0, .08) !important;
+  color: #111 !important;
+}
+.copyright a {
+  color: #111 !important;
+}
+.copyright a:hover {
+  color: var(--brand-hover) !important;
+}
+
 
